@@ -1,6 +1,6 @@
 <html>
   <body>
     <h1>Lua</h1>
-    <p>Assistente Lua</p>
+    <p>Assistente Vitual Lua 1.0</p>
   </body>
 </html>
