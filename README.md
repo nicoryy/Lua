@@ -4,6 +4,8 @@
 
 <p>Projeto básico com a biblioteca speech recognition, utilizo para me auxiliar em algumas simples tarefas. Pretendo ainda melhora-la com um projeto de casa inteligente ainda.</p
 
+<p>Nele eu trabalho com: <pre><br>›API Google Calendar<br>›Outlook<br>›Alguns projetos pessoais.</p>
+
 <br>
 <h6>Última atualização (16:09) 19/09/22 !</h6>
 
