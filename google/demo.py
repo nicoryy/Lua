@@ -9,32 +9,28 @@ import pyautogui as pa
 from time import sleep
 
 
-CLIENT_SECRET_FILE = 'client_secret_908468041465-4g1h5c1bm8laqhqgm07440b812up58l1.apps.googleusercontent.com.json'
+CLIENT_SECRET_FILE = ''
 API_NAME = 'calendar'
 API_VERSION = 'v3'
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 UTC = 'America/Fortaleza'
-INFINITY = 'kbu4cee53fekqpv46n3g3o1f84@group.calendar.google.com'
-NICORY = 'primary'
-IFCE = 'h48848c44j9au5fj85n7r1im0g@group.calendar.google.com'
-calendars = [NICORY, INFINITY, IFCE]
 
 try:
     service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 except RefreshError:
     rmtree(R'C:\Users\pedro\Desktop\nicory\projetos\projetosProntos\falas\token files')
-    sleep(5)
-    a, b = pa.locateCenterOnScreen('pdrncy.png')
-    # print(a)
-    pa.click(a, b)
-    sleep(2.5)
-    c, d = pa.locateCenterOnScreen('continuar1.png')
-    pa.click(c, d)
-    sleep(2.5)
-    pa.scroll(-200)
-    sleep(2)
-    e, f = pa.locateCenterOnScreen('continuar.png')
-    pa.click(e, f)
+#     sleep(5)
+#     a, b = pa.locateCenterOnScreen('pdrncy.png')
+#     # print(a)
+#     pa.click(a, b)
+#     sleep(2.5)
+#     c, d = pa.locateCenterOnScreen('continuar1.png')
+#     pa.click(c, d)
+#     sleep(2.5)
+#     pa.scroll(-200)
+#     sleep(2)
+#     e, f = pa.locateCenterOnScreen('continuar.png')
+#     pa.click(e, f)
 
     os.system("pause")
 except FileNotFoundError:
@@ -42,12 +38,6 @@ except FileNotFoundError:
     service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 
 '''
-created_event = service.events().quickAdd(
-calendarId='etnn5ts05j22cua76n0ci3f3s8@group.calendar.google.com',
-    text='test1'
-    ).execute()
-
------------------------------------------------
 
 DATETIME ex: 2022-07-22 T 09:00:00 -07
               y   m  d  /  h  m  s  UTC 
